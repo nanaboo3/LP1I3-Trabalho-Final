@@ -1,14 +1,10 @@
 /*
+           ***TRABALHO FINAL LP1I3***
 
-Enunciado:
-        1. Construir a classe Data, conforme especificação
-        abaixo, este exercício comporá a avaliação final, portanto será obrigatória sua
-        elaboração para a prova final.
 
-Nomes:
-        Marcelo Modesto de Lima Junior
-        Luciana da Silva Costa
-*/
+    Nomes:  Marcelo Modesto de Lima Junior
+            Luciana da Silva Costa
+ */
 
 import java.text.ParseException;
 import java.util.Scanner;

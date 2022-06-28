@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.text.SimpleDateFormat;
 
 public class AmostraTemperatura {
-    private int numseq = 0;
+    private static int numseq = 0;
     private Data data;
     private Hora hora;
     private float valor;
@@ -25,13 +25,13 @@ public class AmostraTemperatura {
     public AmostraTemperatura(int a, int b, int c, int d, int e, int f, float v) {
         this.data = new Data(a,b,c);
         this.hora = new Hora(d,e,f);
-        this.valor = v;
+        setValor(v);
     }
 
     public AmostraTemperatura(Data d, Hora h, float v) {
         this.data = new Data(d.getDia(), d.getMes(), d.getAno());
         this.hora = new Hora(h.getHor(), h.getMin(), h.getSeg());
-        this.valor = v;
+        setValor(v);
     }
 
     public void setData(int a, int b, int c) {
@@ -58,7 +58,10 @@ public class AmostraTemperatura {
         this.hora.setSeg();
     }
 
-    public void setValor(float v) {this.valor = v;}
+    public void setValor(float v) {
+        this.valor = v;
+        this.numseq++;
+    }
 
     public void setValor() {
         System.out.print("temperatura: ");

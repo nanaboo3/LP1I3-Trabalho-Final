@@ -15,31 +15,33 @@ public class TestaAmostraTemperatura {
         System.out.println(t1.getHora());
         System.out.print("Temperatura: ");
         System.out.println(t1.getValor());
-        System.out.print("Numseq: ");
+        System.out.print("Sequência: ");
         System.out.println(t1.getNumseq());
         System.out.println("-------------------------------------");
 
         AmostraTemperatura t2 = new AmostraTemperatura();
+        System.out.println("\n");
         System.out.print("Data: ");
         System.out.println(t2.getData());
         System.out.print("Horário: ");
         System.out.println(t2.getHora());
         System.out.print("Temperatura: ");
         System.out.println(t2.getValor());
-        System.out.print("Numseq: ");
+        System.out.print("Sequência: ");
         System.out.println(t2.getNumseq());
         System.out.println("-------------------------------------");
 
         t1.setData();
         t1.setHora();
         t1.setValor();
+        System.out.println("\n");
         System.out.print("Data: ");
         System.out.println(t1.getData());
         System.out.print("Horário: ");
         System.out.println(t1.getHora());
         System.out.print("Temperatura: ");
         System.out.println(t1.getValor());
-        System.out.print("Numseq: ");
+        System.out.print("Sequência: ");
         System.out.println(t1.getNumseq());
         System.out.println("-------------------------------------\n");
     }
