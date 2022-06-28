@@ -58,10 +58,7 @@ public class AmostraTemperatura {
         this.hora.setSeg();
     }
 
-    public void setValor(float v) {
-        this.valor = v;
-        this.numseq++;
-    }
+    public void setValor(float v) {this.valor = v;}
 
     public void setValor() {
         System.out.print("temperatura: ");
